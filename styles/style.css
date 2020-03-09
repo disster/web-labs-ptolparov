@@ -39,21 +39,87 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.h1-title {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 32px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.button {
+  outline: 0;
+  border: 0;
+  text-transform: uppercase;
+}
 /* header */
 
 header {
   background-color: #161616;
+  padding: 29px 0;
 }
-.header__item:last-child {
-  margin-right: 0;
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav {
+  display: flex;
+}
+.header__link {
+  text-transform: uppercase;
 }
 .header__item {
   font-size: 13px;
-  text-transform: uppercase;
   color: #fff;
   list-style-type: none;
   margin-right: 30px;
 }
+.header__item-info {
+  position: relative;
+  margin-left: 25px;
+}
 .header__icon {
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: #fff;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+
+/* intro */
+.intro {
+  background-color: #161616;
+  position: relative;
+}
+.intro__inner {
+  width: 46%;
+  padding: 140px 0 40px;
+}
+.intro__title {
+  color: #fff;
+}
+.intro__button {
+  background-color: #ffe500;
+  font-weight: bold;
+  font-size: 18px;
+  color: #161616;
+  padding: 19px 50px;
+  margin-top: 70px;
+}
+.intro__image {
+  display: block;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  width: 50%;
+}
+.intro__control-slider {
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 70px;
 }
