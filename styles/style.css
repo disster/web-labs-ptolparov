@@ -47,6 +47,11 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+.h2-title {
+  font-weight: 600;
+  font-size: 30px;
+  color: #000;
+}
 .button {
   outline: 0;
   border: 0;
@@ -182,6 +187,7 @@ header {
   color: #161616;
   padding: 19px 50px;
   margin-top: 70px;
+  cursor: pointer;
 }
 .intro__container {
   position: relative;
@@ -202,6 +208,12 @@ header {
   display: flex;
   justify-content: flex-end;
   margin-top: 70px;
+}
+/* services */
+
+.services__title {
+  margin-top: 168px;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
