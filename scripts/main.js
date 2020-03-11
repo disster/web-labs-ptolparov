@@ -26,4 +26,12 @@ $().ready(function() {
       $(this).css("width", 55);
     }
   );
+  $(".article-lend__image-background").height(
+    $(".article-lend__image-background").width() * 0.8561403508
+  );
+});
+$(window).resize(function() {
+  $(".article-lend__image-background").height(
+    $(".article-lend__image-background").width() * 0.8561403508
+  );
 });
