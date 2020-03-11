@@ -338,6 +338,26 @@ header {
   width: 40%;
   margin-left: 40px;
 }
+/* area-map */
+.area-map__title {
+  margin: 143px 0 47px;
+  text-align: center;
+}
+.area-map__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* article */
+.article__text {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #161616;
+}
 
 @media (max-width: 1200px) {
   /* header */
