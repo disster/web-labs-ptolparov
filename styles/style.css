@@ -48,7 +48,7 @@ body {
   text-transform: uppercase;
 }
 .h2-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 30px;
   color: #000;
 }
@@ -79,7 +79,7 @@ body {
   color: #fff;
   list-style-type: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 30px;
 }
 .burger-menu-active {
@@ -119,6 +119,42 @@ body {
 .burger-menu--button__elem:nth-child(3) {
   bottom: 0;
 }
+
+/* nav */
+
+.nav {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__link {
+  text-transform: uppercase;
+}
+
+.nav__item {
+  font-size: 13px;
+  color: #fff;
+  list-style-type: none;
+  margin-right: 30px;
+  transition: all 0.2s linear;
+}
+.nav__item-info {
+  position: relative;
+  margin-left: 25px;
+}
+.nav__icon {
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #fff;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+.nav-top {
+  display: none;
+  flex-direction: row-reverse;
+}
 /* header */
 
 header {
@@ -132,42 +168,9 @@ header {
   justify-content: space-between;
   padding: 29px 0;
 }
-.header__logo-container {
+.header__logo {
   user-select: none;
   pointer-events: none;
-}
-.header__nav {
-  width: 90%;
-  display: flex;
-  justify-content: flex-end;
-}
-.header__link {
-  text-transform: uppercase;
-}
-.header__item {
-  font-size: 13px;
-  color: #fff;
-  list-style-type: none;
-  margin-right: 30px;
-}
-.header__item-info {
-  position: relative;
-  margin-left: 25px;
-}
-.header__icon {
-  left: -25px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: #fff;
-  width: 15px;
-  height: 15px;
-  position: absolute;
-}
-
-.header-top {
-  display: none;
-  flex-direction: row-reverse;
-  margin-top: 20px;
 }
 
 /* intro */
@@ -189,6 +192,10 @@ header {
   padding: 19px 50px;
   margin-top: 70px;
   cursor: pointer;
+  transition: all 0.2s linear;
+}
+.intro__button:hover {
+  transform: scale(1.1);
 }
 .intro__container {
   position: relative;
@@ -213,10 +220,10 @@ header {
 /* services */
 .services {
   background-color: #f1f2f5;
-  padding-bottom: 150px;
+  padding: 200px 0 150px;
 }
 .services__title {
-  margin: 168px 0 12px;
+  margin: 0 0 12px;
   text-align: center;
 }
 .services__container {
@@ -376,6 +383,12 @@ header {
 
 .article-land__button {
   background-color: #161616;
+  border: 1px solid #161616;
+  transition: all 0.2s linear;
+}
+.article-land__button:hover {
+  color: #161616;
+  background-color: #fff;
 }
 .article-land__container {
   display: flex;
@@ -420,13 +433,103 @@ header {
   left: 50%;
   width: 70%;
 }
+
+.article-storehouse__button:hover {
+  color: #161616;
+  background-color: #fff;
+}
 .article-storehouse__button {
   background-color: transparent;
   border: 1px solid #fff;
+  transition: all 0.2s linear;
+}
+/* subscribe */
+.subscribe {
+  padding: 150px 0 100px;
+}
+.subscribe__container {
+  width: 66%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #161616;
+}
+.subscribe__input {
+  padding: 18px 20px;
+  background-color: #eff0f1;
+  outline: 0;
+  border: 0;
+  width: 36%;
+  display: block;
+  margin-right: 10px;
+}
+.subscribe__form {
+  margin-top: 35px;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.subscribe__input::placeholder {
+  font-size: 16px;
+  color: #161616;
+  opacity: 0.5;
+}
+.subscribe__button {
+  background-color: #161616;
+  color: #fff;
+  padding: 18px 46px;
+  display: block;
+  transition: all 0.2s linear;
+  border: 1px solid #161616;
+}
+.subscribe__button:hover {
+  background-color: #fff;
+  color: #161616;
+}
+/* footer */
+footer {
+  background-color: #161616;
+}
+.footer__logo {
+  user-select: none;
+  pointer-events: none;
+}
+.footer-mob__logo {
+  user-select: none;
+  pointer-events: none;
+  margin: 30px 0;
+}
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 29px 0;
+}
+.footer-mob {
+  display: none;
+  justify-content: center;
+  text-align: center;
+}
+.footer-mob__item {
+  color: #fff;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1200px) {
   /* header */
-  .header__item-info-midle {
+  .nav__item-info-midle {
     display: none;
   }
   header {
@@ -436,11 +539,12 @@ header {
     left: 0;
     width: 100%;
     background-color: transparent;
+    padding-top: 20px;
   }
   .header__inner {
     padding: 15px 0;
   }
-  .header-top {
+  .nav-top {
     display: flex;
   }
   .logo-img {
@@ -484,6 +588,17 @@ header {
     font-size: 15px;
     margin-top: 30px;
   }
+  /* services */
+  .services {
+    padding: 62px 0 100px;
+  }
+  /* subscribe */
+  .subscribe__container {
+    width: 85%;
+  }
+  footer {
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 870px) {
@@ -494,7 +609,7 @@ header {
   .header__inner {
     padding: 10px 0;
   }
-  .header__item {
+  .nav__item {
     font-size: 13px;
     margin-right: 20px;
   }
@@ -511,10 +626,10 @@ header {
   }
   .services {
     background-color: #fff;
-    padding-bottom: 0;
+    padding: 0;
   }
   .services__title {
-    margin-top: 57px;
+    margin-top: 62px;
   }
   /* advantages */
   .advantages__item {
@@ -523,6 +638,9 @@ header {
   .h2-title {
     font-size: 20px;
     font-weight: 500;
+  }
+  .advantages__item {
+    width: 50%;
   }
   /* article-land */
   .article-lend__image-background {
@@ -579,6 +697,13 @@ header {
     top: -120px;
     width: 80%;
   }
+  /* subscribe */
+  .subscribe {
+    padding: 40px 0;
+  }
+  .subscribe__title {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 770px) {
@@ -593,12 +718,38 @@ header {
   .header__inner {
     padding: 30px 5px;
   }
-  .header__nav,
-  .header-top {
+  .nav,
+  .nav-top {
     display: none;
   }
   .logo-img {
     width: 120px;
+  }
+  /* area-map */
+  .area-map__title {
+    margin: 40px 0;
+  }
+  .area-map__image {
+    margin-bottom: 40px;
+  }
+  /* subscribe */
+  .subscribe__container {
+    width: 100%;
+  }
+  .subscribe__input {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .subscribe__form {
+    flex-direction: column;
+  }
+  /* footer */
+  .footer__inner {
+    display: none;
+  }
+  .footer-mob {
+    display: flex;
   }
 }
 
