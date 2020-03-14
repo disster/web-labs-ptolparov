@@ -1,0 +1,133 @@
+/*general*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #ccc;
+}
+
+::-moz-selection {
+  background: #ccc;
+}
+
+::-webkit-selection {
+  background: #ccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+main {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/background.png");
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.hover {
+  width: 200px;
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  cursor: pointer;
+  transition: all 1.5s ease;
+}
+.hover:hover {
+  opacity: 0;
+}
+.shadow {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: rgba(228, 89, 81, 0.1);
+  border-radius: 50%;
+  top: 70px;
+  left: 800px;
+  animation-name: animation-shadow;
+  animation-duration: 12s;
+  transition-timing-function: ease;
+  animation-iteration-count: infinite;
+  user-select: none;
+  pointer-events: none;
+}
+@keyframes animation-shadow {
+  0% {
+    box-shadow: 0px 0px 65px 20px rgba(228, 89, 81, 0.75);
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0px 0px 65px 20px rgba(228, 89, 81, 0.75);
+  }
+}
+.rocket {
+  width: 200px;
+  position: absolute;
+  bottom: 50px;
+  animation-name: animation-rocket;
+  animation-duration: 8s;
+  transition-timing-function: cubic-bezier(0.21, -0.13, 0.55, 0.74);
+  animation-iteration-count: infinite;
+  user-select: none;
+  pointer-events: none;
+}
+.fade {
+  width: 100px;
+  position: absolute;
+  left: 790px;
+  top: 340px;
+  animation-name: animation-fade;
+  animation-duration: 6s;
+  transition-timing-function: cubic-bezier(0.21, -0.13, 0.55, 0.74);
+  animation-iteration-count: infinite;
+  user-select: none;
+  pointer-events: none;
+}
+@keyframes animation-rocket {
+  0% {
+    left: -100px;
+    transform: scaleY(1);
+  }
+  90% {
+    left: 150%;
+    transform: scaleY(0.1);
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes animation-fade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
