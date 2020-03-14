@@ -3,6 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="scripts/main.js"></script>
   </head>
   <body>
     <header>
@@ -31,11 +43,11 @@
             <button class="intro__button button ">HIRE IS NOW</button>
           </div>
         </div>
-        <svg class="slide__down">
+        <svg class="scrollDown" id="scrollDown">
           <use xlink:href="images/sprite.svg#arrow-down"></use>
         </svg>
       </div>
-      <section class="aboutUs">
+      <section class="aboutUs" id="aboutUs">
         <h2 class="section__title">About Us</h2>
         <h3 class="section__subtitle">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
