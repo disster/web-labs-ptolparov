@@ -1,0 +1,130 @@
+/*general*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic");
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #ccc;
+}
+
+::-moz-selection {
+  background: #ccc;
+}
+
+::-webkit-selection {
+  background: #ccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+.button {
+  outline: 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: inherit;
+  border: 0;
+}
+header {
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.nav__item {
+  color: #212121;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-right: 40px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+.intro {
+  position: relative;
+  color: #fff;
+  margin-top: 10vh;
+  background-image: url("../images/intro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  text-align: center;
+}
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.intro__title {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 3px;
+  margin-bottom: 36px;
+}
+.intro__subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1.1px;
+  margin-bottom: 108px;
+}
+.intro__button {
+  background-color: #00897b;
+  padding: 28px 46px;
+  cursor: pointer;
+  width: 22%;
+  margin: 0 auto;
+}
+.slide__down {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  margin-top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+  cursor: pointer;
+}
